@@ -163,3 +163,13 @@ section{scroll-margin-top:78px}
 .portrait-social:hover{transform:translateY(-2px);border-color:#b88936;box-shadow:0 4px 14px rgba(20,45,82,.09)}
 .portrait-social:focus-visible{outline:3px solid #b88936;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.portrait-social{transition:none}.portrait-social:hover{transform:none}}
+
+/* V2.3 — fixed-size social links and balanced hero */
+.portrait-caption{padding:15px 18px 16px}
+.portrait-caption strong{font-size:.96rem;line-height:1.4}
+.portrait-caption>span{font-size:.77rem}
+.portrait-caption .portrait-socials{display:flex!important;flex-direction:row!important;align-items:center;justify-content:center;flex-wrap:nowrap;gap:12px;margin:12px 0 0;padding:12px 0 0;border-top:1px solid #e8eaf0}
+.portrait-socials .portrait-social{flex:0 0 38px!important;display:inline-flex!important;align-items:center;justify-content:center;width:38px!important;height:38px!important;max-width:38px;max-height:38px;padding:0!important;overflow:hidden;border-radius:10px}
+.portrait-socials .portrait-social svg{display:block!important;flex:none;width:19px!important;height:19px!important;max-width:19px!important;max-height:19px!important}
+.hero-grid{align-items:center}
+@media(max-width:850px){.hero .portrait-card{margin-inline:auto}.hero-grid{gap:26px}}
