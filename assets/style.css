@@ -28,3 +28,18 @@
 #pillars .card .pillar-icon{position:absolute;top:22px;right:24px;font-size:2rem;line-height:1;pointer-events:none}
 #pillars .card .num{padding-right:54px}
 @media(max-width:540px){#pillars .card .pillar-icon{top:20px;right:22px;font-size:1.85rem}}
+
+/* Compact professional background and skills */
+.background-section{background:#fafbfe}
+.qualification-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.qualification-item{border:1px solid var(--line);border-radius:15px;background:#fff;padding:24px}
+.qualification-type{font-size:.73rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#946923}
+.qualification-item h3{margin:10px 0 7px;font-size:1.18rem}
+.qualification-item p{color:var(--muted);font-size:.92rem;margin:0}
+.skills-section{background:#f0f3f9}
+.skills-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.skill-group h3{font-size:1rem;margin-bottom:14px}
+.skill-pills{display:flex;flex-wrap:wrap;gap:9px}
+.skill-pills span{background:#fff;border:1px solid #dce2ec;border-radius:8px;padding:7px 11px;font-size:.85rem;color:var(--ink)}
+@media(max-width:850px){.skills-groups{grid-template-columns:1fr;gap:26px}}
+@media(max-width:540px){.qualification-grid{grid-template-columns:1fr}.qualification-item{padding:20px}}
