@@ -155,3 +155,11 @@ section{scroll-margin-top:78px}
 #connect .profile-placeholder{opacity:.78}
 .skills-groups .skill-group{min-width:0}
 @media(max-width:540px){.qualification-item{min-height:auto;padding:22px}.skill-pills{gap:8px}.skill-pills span{font-size:.81rem;padding:7px 10px}}
+
+/* Profile social icon links */
+.portrait-socials{display:flex;align-items:center;justify-content:center;gap:13px;margin-top:17px;padding-top:15px;border-top:1px solid #e8eaf0}
+.portrait-social{display:inline-flex;align-items:center;justify-content:center;width:43px;height:43px;border:1px solid #dce2ec;border-radius:11px;background:#fff;color:#172b45;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.portrait-social svg{width:24px;height:24px;display:block}
+.portrait-social:hover{transform:translateY(-2px);border-color:#b88936;box-shadow:0 4px 14px rgba(20,45,82,.09)}
+.portrait-social:focus-visible{outline:3px solid #b88936;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.portrait-social{transition:none}.portrait-social:hover{transform:none}}
