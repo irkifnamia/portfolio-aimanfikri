@@ -210,3 +210,8 @@ section{scroll-margin-top:78px}
 .hero .portrait-caption{text-align:center;padding:16px 18px 15px;gap:0}
 .hero .portrait-caption>span{font-size:.86rem;line-height:1.5;color:var(--muted)}
 .hero .portrait-caption .portrait-socials{margin-top:12px;padding-top:12px}
+
+/* V2.6 — subtler philosophy text on all three pillar pages */
+.page-hero .lead{font-size:1rem;line-height:1.7;max-width:700px}
+@media(max-width:850px){.page-hero .lead{font-size:.98rem;line-height:1.7}}
+@media(max-width:540px){.page-hero .lead{font-size:.96rem;line-height:1.7}}
