@@ -173,3 +173,35 @@ section{scroll-margin-top:78px}
 .portrait-socials .portrait-social svg{display:block!important;flex:none;width:19px!important;height:19px!important;max-width:19px!important;max-height:19px!important}
 .hero-grid{align-items:center}
 @media(max-width:850px){.hero .portrait-card{margin-inline:auto}.hero-grid{gap:26px}}
+
+/* V2.4 — Institution logos in qualification cards */
+.qualification-item{
+  position:relative;
+  padding-right:78px;
+}
+.qualification-item .qualification-type{
+  display:block;
+  max-width:100%;
+  overflow-wrap:break-word;
+}
+.qualification-item .qualification-logo{
+  position:absolute;
+  top:22px;
+  right:22px;
+  width:38px;
+  height:38px;
+  max-width:38px;
+  max-height:38px;
+  object-fit:contain;
+  object-position:center;
+  display:block;
+}
+@media(max-width:540px){
+  .qualification-item{padding-right:69px}
+  .qualification-item .qualification-logo{
+    top:20px;
+    right:18px;
+    width:34px;
+    height:34px;
+  }
+}
