@@ -9,3 +9,6 @@
 /* V1.3 minimal focused layout */
 .hero{padding:58px 0 68px;background:#fafbfe}.hero-grid{grid-template-columns:minmax(0,1.1fr) minmax(240px,.9fr);gap:44px}.hero .name-heading{margin:10px 0 18px}.hero .portrait-card{max-width:390px;width:100%;justify-self:end;box-shadow:none;border:1px solid #d9d9df;border-radius:15px}.portrait-caption{padding:15px 20px;border-top:1px solid #e1d4b9}.portrait-caption strong{font-size:.98rem}.portrait-caption span{font-size:.78rem}.portfolio-label{letter-spacing:.12em;margin:0;font-size:.94rem}.section{padding:60px 0}.section-intro{margin-bottom:22px}.card{padding:24px;box-shadow:none}.card p{font-size:.9rem}.card .tag-list{display:none}.topic-card{min-height:150px}.topic-coming{font-size:.72rem}.project{box-shadow:none}
 @media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:24px}.hero{padding:44px 0 58px}.hero .portrait-card{justify-self:center;max-width:320px}.hero .name-heading{font-size:clamp(2.2rem,9vw,3.8rem)}.portrait-caption{text-align:center}.section{padding:48px 0}}
+
+/* Keep current compact portrait crisp at its native resolution until HQ asset is uploaded */
+@media(max-width:850px){.hero .portrait-card{max-width:260px}}@media(min-width:851px){.hero .portrait-card{max-width:300px}}
