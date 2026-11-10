@@ -146,3 +146,12 @@ section{scroll-margin-top:78px}
 @media(max-width:850px){#pillars .card{min-height:215px}.collection-body{padding:38px 0 65px}}
 @media(max-width:540px){#pillars .card{min-height:195px}.collection-head{margin-bottom:17px}.collection-head h2{font-size:1.35rem}.topic-link{min-height:100px}.empty-gallery{padding:30px 24px}.hero:before{width:3px}}
 @media(prefers-reduced-motion:reduce){.topic-arrow{transition:none}.topic-link:hover .topic-arrow{transform:none}}
+
+/* V2.1 qualifications and profile refinements */
+.qualification-grid{align-items:stretch}
+.qualification-item{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:162px}
+.qualification-item h3{overflow-wrap:anywhere}
+#connect .profiles .profile-placeholder{border:1px solid #d9e0e9;border-radius:9px;min-height:46px;display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;font-size:.9rem;font-weight:700;background:#fff;color:var(--ink)}
+#connect .profile-placeholder{opacity:.78}
+.skills-groups .skill-group{min-width:0}
+@media(max-width:540px){.qualification-item{min-height:auto;padding:22px}.skill-pills{gap:8px}.skill-pills span{font-size:.81rem;padding:7px 10px}}
