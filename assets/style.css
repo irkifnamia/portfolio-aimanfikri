@@ -12,3 +12,9 @@
 
 /* Keep current compact portrait crisp at its native resolution until HQ asset is uploaded */
 @media(max-width:850px){.hero .portrait-card{max-width:260px}}@media(min-width:851px){.hero .portrait-card{max-width:300px}}
+
+/* V1.4: Minimal intellectual property entry within Connect */
+.ip-inline{margin-top:26px;padding:17px 0;border-top:1px solid var(--line);display:flex;align-items:baseline;gap:10px 20px;flex-wrap:wrap}
+.ip-title{font-family:Manrope,sans-serif;font-weight:700;color:var(--navy)}
+.ip-detail{color:var(--muted);font-size:.87rem}
+@media(max-width:540px){.ip-inline{flex-direction:column;align-items:flex-start;gap:3px}}
