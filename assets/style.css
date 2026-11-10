@@ -18,3 +18,7 @@
 .ip-title{font-family:Manrope,sans-serif;font-weight:700;color:var(--navy)}
 .ip-detail{color:var(--muted);font-size:.87rem}
 @media(max-width:540px){.ip-inline{flex-direction:column;align-items:flex-start;gap:3px}}
+
+/* Match the profile link design for the forthcoming IP portfolio */
+.ip-profile{margin-top:12px}
+.profiles .profile-placeholder{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);background:#fff;border-radius:9px;padding:12px 19px;font-size:.93rem;font-weight:700;color:var(--ink);cursor:default;user-select:none}
