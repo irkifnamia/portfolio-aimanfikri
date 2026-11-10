@@ -22,3 +22,9 @@
 /* Match the profile link design for the forthcoming IP portfolio */
 .ip-profile{margin-top:12px}
 .profiles .profile-placeholder{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);background:#fff;border-radius:9px;padding:12px 19px;font-size:.93rem;font-weight:700;color:var(--ink);cursor:default;user-select:none}
+
+/* Pillar icons: fixed to the top-right of each portfolio card */
+#pillars .card{position:relative}
+#pillars .card .pillar-icon{position:absolute;top:22px;right:24px;font-size:2rem;line-height:1;pointer-events:none}
+#pillars .card .num{padding-right:54px}
+@media(max-width:540px){#pillars .card .pillar-icon{top:20px;right:22px;font-size:1.85rem}}
