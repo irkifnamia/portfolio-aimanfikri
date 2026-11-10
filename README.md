@@ -5,7 +5,7 @@
 ## The three pillars
 
 1. **Career (Mathematics & Statistics Lecturer)** — awards & achievements; mentoring & sharing; professional development; innovation/R&D/PLC; CQI excellence programmes; PSPM analysis & monitoring; special assignments; teaching materials; student outcomes.
-2. **Academia (PhD & Academic Contributions)** — certifications & accreditation; Google Scholar; Scopus; publications; research grant involvement.
+2. **Academia (PhD & Academic Contributions)** — certifications & accreditation; Google Scholar; Academia.edu; publications; research grant involvement.
 3. **Tech (Analytics & AI)** — certifications & accreditation; GitHub; practice reports; training reports; training recordings.
 
 Shared content: LinkedIn and intellectual property.
@@ -22,3 +22,5 @@ Shared content: LinkedIn and intellectual property.
 GitHub Pages deploys from the main branch root. Change files and commit to main to update the published website. Replace placeholder categories with verified case studies, certificates, publication links and publicly shareable materials. Never expose confidential student data, training client details, private records or secrets.
 
 The portrait on the homepage was supplied by the portfolio owner.
+
+Latest: Homepage simplified; Academia.edu replaces Scopus; profile source link removed; minimalist blue and gold refinements.
