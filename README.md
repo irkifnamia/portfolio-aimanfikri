@@ -24,3 +24,14 @@ GitHub Pages deploys from the main branch root. Change files and commit to main 
 The portrait on the homepage was supplied by the portfolio owner.
 
 Latest: Homepage simplified; Academia.edu replaces Scopus; profile source link removed; minimalist blue and gold refinements.
+
+## V2.0 — Academic Executive Minimalist
+
+- Refined navy / gold visual hierarchy, white space, cards and responsive behavior
+- Career, Academia and Tech portfolio cards are now navigable
+- `collection.html?item=career-01` (and other collection IDs) displays a dedicated collection landing page
+- `assets/collections.js` maps collection IDs to titles and back links
+- Verified Google Scholar, Academia.edu, and GitHub profile cards link directly to their actual platforms
+- Empty collections are explicitly labeled **in progress**; do not present placeholders as achievements
+
+To publish a completed collection, replace its placeholder with verified materials (and only publicly shareable files). Preserve collection URLs so existing links remain valid.
