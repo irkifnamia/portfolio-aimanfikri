@@ -1,33 +1,24 @@
-# Aiman Portfolio — V1.0
+# AIMAN FIKRI JAMALUDIN — 3 PILLARS PORTFOLIO
 
-A responsive personal portfolio organized around **Education · Research · Technology**.
+**Live website:** https://irkifnamia.github.io/portfolio-aimanfikri/
 
-## Website
+## The three pillars
 
-**GitHub repository:** https://github.com/irkifnamia/portfolio-aimanfikri
+1. **Career (Mathematics & Statistics Lecturer)** — awards & achievements; mentoring & sharing; professional development; innovation/R&D/PLC; CQI excellence programmes; PSPM analysis & monitoring; special assignments; teaching materials; student outcomes.
+2. **Academia (PhD & Academic Contributions)** — certifications & accreditation; Google Scholar; Scopus; publications; research grant involvement.
+3. **Tech (Analytics & AI)** — certifications & accreditation; GitHub; practice reports; training reports; training recordings.
 
-**Planned GitHub Pages address:** https://irkifnamia.github.io/portfolio-aimanfikri/
+Shared content: LinkedIn and intellectual property.
 
 ## Files
+- `index.html`: profile + pillar overview + shared portfolio
+- `education.html`: Career pillar (legacy filename, navigation label is Career)
+- `research.html`: Academia pillar (legacy filename, navigation label is Academia)
+- `technology.html`: Tech pillar (legacy filename, navigation label is Tech)
+- `assets/style.css`: styles and mobile responsive layouts
+- `assets/script.js`: mobile navigation
 
-- `index.html` — Homepage and profile links
-- `education.html` — Mathematics teaching portfolio
-- `research.html` — PhD research and publications
-- `technology.html` — Power BI, analytics and web applications
-- `assets/style.css` — Responsive styles
-- `assets/script.js` — Navigation interactions
+## Editing and publication
+GitHub Pages deploys from the main branch root. Change files and commit to main to update the published website. Replace placeholder categories with verified case studies, certificates, publication links and publicly shareable materials. Never expose confidential student data, training client details, private records or secrets.
 
-## Enable GitHub Pages
-
-1. Open repository **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select **main** and **/(root)**, then **Save**.
-4. Open the planned GitHub Pages address after deployment completes.
-
-## Personalize
-
-Replace the generic LinkedIn and Google Scholar homepage links in `index.html` with your personal URLs. Confirm your public name, projects, publications, photographs and achievements before sharing the site broadly. Do not commit passwords, API keys, confidential research or identifiable student records.
-
-## Development
-
-This project uses HTML, CSS and JavaScript. It does not need a database or build tool. Open `index.html` locally to preview the design.
+The portrait on the homepage was supplied by the portfolio owner.
