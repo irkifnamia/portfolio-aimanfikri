@@ -255,3 +255,37 @@ section{scroll-margin-top:78px}
 #intellectual-property{background:#fbfcfe}
 #background{background:#e7edf5}
 #skills{background:#fbfcfe}
+
+/* V3.1 — Tech trainer profile and Microsoft credential */
+.trainer-feature-section{background:#fbfcfe}
+.trainer-feature-card{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:30px 34px;background:#fff;border:1px solid #ccd5e2;border-left:4px solid #b88936;border-radius:16px;text-decoration:none;box-shadow:0 4px 16px rgba(20,45,82,.055);transition:box-shadow .2s,border-color .2s,transform .2s}
+.trainer-feature-card:hover{border-color:#c3a86c;box-shadow:0 9px 25px rgba(20,45,82,.1);transform:translateY(-2px)}
+.trainer-feature-card h3{font-size:clamp(1.15rem,2.5vw,1.55rem);margin:8px 0}
+.trainer-feature-card p{color:var(--muted);font-size:.94rem;max-width:620px;margin:0}
+.trainer-feature-label{font-size:.71rem;font-weight:800;letter-spacing:.12em;color:#926a28}
+.trainer-feature-arrow{flex:none;display:grid;place-items:center;font-size:1.5rem;color:#a7792d;border:1px solid #ccd5e2;border-radius:12px;width:45px;height:45px}
+.trainer-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(230px,1fr);gap:30px;align-items:start}
+.trainer-intro p{max-width:740px;line-height:1.8;color:var(--muted)}
+.trainer-facts,.trainer-experience-card{background:#fff;border:1px solid #ccd5e2;border-radius:15px;padding:26px;box-shadow:0 3px 12px rgba(20,45,82,.045)}
+.trainer-facts h3,.trainer-experience-card h3{margin:12px 0;font-size:1.16rem;color:var(--navy)}
+.trainer-facts p,.trainer-experience-card p{color:var(--muted);line-height:1.65}
+.trainer-inline-link{color:#8d6725;text-decoration:underline;text-underline-offset:4px;font-weight:700}
+.trainer-tag-list{display:flex;flex-wrap:wrap;gap:12px}
+.trainer-tag-list span{padding:11px 16px;border-radius:50px;border:1px solid #ccd5e2;background:#fff;color:#273c5d;font-size:.91rem}
+.trainer-experience-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.pl300-panel[hidden]{display:none!important}
+.pl300-panel{background:#fff;border:1px solid #ccd5e2;border-radius:18px;padding:28px;box-shadow:0 4px 16px rgba(20,45,82,.04)}
+.pl300-panel>h2{font-size:clamp(1.32rem,3.5vw,1.85rem);margin:12px 0 24px}
+.pl300-certificate{border:12px solid #17355e;border-radius:8px;background:white;padding:34px;min-height:365px;text-align:center;color:#142d52}
+.pl300-cert-header{display:flex;align-items:center;justify-content:center;gap:9px;font-size:1.25rem;color:#555}
+.ms-symbol{width:26px;height:26px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px}
+.ms-symbol i:nth-child(1){background:#f35325}.ms-symbol i:nth-child(2){background:#81bc06}.ms-symbol i:nth-child(3){background:#05a6f0}.ms-symbol i:nth-child(4){background:#ffba08}
+.pl300-certificate-name{font-weight:800;font-size:1.15rem;letter-spacing:.03em;margin:36px 0 7px}
+.pl300-certificate-subtitle{font-size:.9rem;margin:0}
+.pl300-certificate h3{font-size:clamp(1rem,2.6vw,1.3rem);margin:16px 0 35px}
+.pl300-cert-footer{display:flex;justify-content:space-between;align-items:center;gap:20px;text-align:left;font-size:.87rem;line-height:1.85}
+.pl300-badge{background:#163d72;color:#fff;border:3px solid #91afda;text-align:center;border-radius:30px 30px 44px 44px;padding:13px 12px;font-size:.58rem;line-height:1.3;letter-spacing:.04em}
+.pl300-badge strong{display:block;font-size:.8rem}.pl300-badge span{display:block;background:#fff;color:#142d52;margin-top:6px;padding:4px;font-weight:800;font-size:.66rem}
+.pl300-cert-note{font-size:.82rem;color:var(--muted);margin:15px 0 0}
+@media(max-width:650px){.trainer-layout,.trainer-experience-grid{grid-template-columns:1fr}.trainer-feature-card{padding:23px 20px;gap:12px}.trainer-feature-card p{font-size:.87rem}.trainer-feature-arrow{width:38px;height:38px}.pl300-panel{padding:18px}.pl300-certificate{border-width:8px;padding:24px 12px}.pl300-cert-footer{font-size:.73rem}.pl300-badge{padding:10px 8px}}
+@media(prefers-reduced-motion:reduce){.trainer-feature-card{transition:none}.trainer-feature-card:hover{transform:none}}
