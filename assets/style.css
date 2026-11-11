@@ -249,3 +249,9 @@ section{scroll-margin-top:78px}
 .card:hover,.topic-card:hover,.qualification-item:hover,.ip-feature-card:hover{border-color:#c5aa77;box-shadow:0 9px 24px rgba(20,45,82,.09)}
 .skill-pills span{background:#fff;border-color:#ccd5e2}
 #pillars .card{border-color:#ccd5e2}
+
+/* V3.0 — alternate homepage section surfaces in order */
+#pillars{background:#e7edf5}
+#intellectual-property{background:#fbfcfe}
+#background{background:#e7edf5}
+#skills{background:#fbfcfe}
