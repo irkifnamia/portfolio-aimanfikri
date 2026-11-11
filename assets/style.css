@@ -316,3 +316,14 @@ section{scroll-margin-top:78px}
 .pl300-original-image{width:100%;background:#e7edf5;border:1px solid #ccd5e2;border-radius:11px;overflow:hidden;line-height:0}
 .pl300-original-image img{display:block;width:100%;height:auto;max-width:100%;user-select:none;-webkit-user-drag:none}
 @media(max-width:650px){.trainer-view-label{font-size:.65rem}.trainer-pdf-pages{padding:16px 8px;gap:16px}.trainer-pdf-page canvas{max-width:100%}}
+
+/* V3.4 — compact pillar heroes and dedicated Home icon in site header */
+.nav-links{order:1;margin-left:auto}
+.nav-actions{order:2;display:flex;align-items:center;justify-content:flex-end;gap:12px}
+.home-nav-btn{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;flex:none;border:1px solid #ccd5e2;border-radius:11px;background:#fff;color:#142d52;transition:border-color .18s ease,background .18s ease}
+.home-nav-btn:hover{border-color:#b88936;background:#f8f5ec}
+.home-nav-btn svg{display:block;width:21px;height:21px}
+.pillar-hero{padding-top:54px}
+.pillar-hero .eyebrow{margin-top:0!important}
+@media(max-width:850px){.nav-actions{margin-left:auto;gap:12px}.nav-links{margin-left:0}.home-nav-btn{width:43px;height:43px}.pillar-hero{padding-top:32px}}
+@media(max-width:540px){.nav-actions{gap:10px}.home-nav-btn{width:40px;height:40px}.pillar-hero{padding-top:28px}}
