@@ -1,0 +1,28 @@
+{
+  "description": "Content source inventory for manual/on-request synchronization. Public portfolio serves its own GitHub-hosted copies, not Google Drive embeds.",
+  "mode": "on-demand",
+  "google_drive_root_folder_id": "1n2-0HAmTiWVOQ-mhSeAID_BRx3CQRQhv",
+  "folders": {
+    "CAREER": "1P7r8apmrAP37WYoyyfXWfIorbdMEDQdv",
+    "ACADEMIA": "14QMxmHavF040GXcWeegQ1QT3-kBr0nQO",
+    "TECH": "1WMWzlG0OpvzxqP1vn8JA_KpLBXO_0O9J",
+    "IP": "1Br6-2svvbJ2Tryj4vSY1VPw1DoAB6zcm"
+  },
+  "assets": [
+    {
+      "drive_file_id": "1av_lJSYVx0h0SrXHhynvRQhCfPYfOHgI",
+      "source_folder": "TECH/trainer profile",
+      "github_path": "assets/trainer-profile-aiman.pdf",
+      "site_path": "trainer-profile.html",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1io43HtjLz6muFDcqnR6nuSBpj_VPSYYa",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/cert-pl300.png",
+      "site_path": "collection.html?item=tech-01",
+      "display": "inline_image"
+    }
+  ],
+  "notice": "No public website embeds of Drive. No download controls are presented; browser-retrievable assets cannot be made technically non-downloadable on a public static site."
+}
