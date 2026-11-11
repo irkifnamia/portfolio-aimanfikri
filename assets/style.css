@@ -215,3 +215,15 @@ section{scroll-margin-top:78px}
 .page-hero .lead{font-size:1rem;line-height:1.7;max-width:700px}
 @media(max-width:850px){.page-hero .lead{font-size:.98rem;line-height:1.7}}
 @media(max-width:540px){.page-hero .lead{font-size:.96rem;line-height:1.7}}
+
+/* V2.7 — featured IP section */
+.ip-feature-section{background:#fbfcfe}
+.ip-feature-card{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:30px 34px;background:#fff;border:1px solid #dce2ec;border-left:4px solid #b88936;border-radius:16px;box-shadow:0 3px 14px rgba(20,45,82,.035);text-decoration:none;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.ip-feature-card h3{font-size:clamp(1.15rem,2.4vw,1.5rem);margin:8px 0}
+.ip-feature-card p{color:var(--muted);font-size:.94rem;margin:0}
+.ip-feature-kicker{font-size:.72rem;letter-spacing:.13em;font-weight:800;color:#926a28}
+.ip-feature-arrow{display:inline-flex;align-items:center;justify-content:center;flex:none;width:43px;height:43px;border:1px solid #e2e6ec;border-radius:12px;font-size:1.35rem;color:#97712e}
+.ip-feature-card:hover{border-color:#c9af7e;box-shadow:0 8px 25px rgba(20,45,82,.08);transform:translateY(-2px)}
+.ip-feature-card:focus-visible{outline:3px solid #b88936;outline-offset:3px}
+@media(max-width:540px){.ip-feature-card{padding:23px 20px;gap:12px}.ip-feature-arrow{width:36px;height:36px}.ip-feature-card p{font-size:.87rem}}
+@media(prefers-reduced-motion:reduce){.ip-feature-card{transition:none}.ip-feature-card:hover{transform:none}}
