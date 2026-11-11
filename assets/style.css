@@ -289,3 +289,18 @@ section{scroll-margin-top:78px}
 .pl300-cert-note{font-size:.82rem;color:var(--muted);margin:15px 0 0}
 @media(max-width:650px){.trainer-layout,.trainer-experience-grid{grid-template-columns:1fr}.trainer-feature-card{padding:23px 20px;gap:12px}.trainer-feature-card p{font-size:.87rem}.trainer-feature-arrow{width:38px;height:38px}.pl300-panel{padding:18px}.pl300-certificate{border-width:8px;padding:24px 12px}.pl300-cert-footer{font-size:.73rem}.pl300-badge{padding:10px 8px}}
 @media(prefers-reduced-motion:reduce){.trainer-feature-card{transition:none}.trainer-feature-card:hover{transform:none}}
+
+/* V3.2 — minimal inline PDF document viewer for trainer profile */
+.trainer-document-card{background:#fff;border:1px solid #ccd5e2;border-radius:17px;overflow:hidden;box-shadow:0 3px 12px rgba(20,45,82,.055)}
+.trainer-document-top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:25px 28px}
+.trainer-document-top h2{font-size:clamp(1.15rem,2.8vw,1.5rem);margin:7px 0}
+.trainer-document-top p{color:var(--muted);margin:0;font-size:.92rem}
+.trainer-pdf-action{flex:none;display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;background:#142d52;color:white;border-radius:9px;font-size:.88rem;font-weight:700}
+.trainer-pdf-action:hover{background:#244b78;color:#fff}
+.trainer-pdf-action[hidden]{display:none}
+.trainer-document-card iframe{display:block;width:100%;height:min(78vh,820px);min-height:480px;border:0;border-top:1px solid #ccd5e2;background:#fff}
+.trainer-document-card iframe[hidden]{display:none}
+.trainer-pdf-status{margin:0 28px;padding:24px;border:1px dashed #ccd5e2;border-radius:10px;color:#536379;background:#f6f8fc}
+.trainer-pdf-status[hidden]{display:none}
+.trainer-pdf-hint{color:var(--muted);font-size:.87rem;padding:16px 28px;margin:0}
+@media(max-width:650px){.trainer-document-top{flex-direction:column;align-items:flex-start;padding:20px}.trainer-document-card iframe{height:70vh;min-height:420px}.trainer-pdf-status{margin:0 20px;padding:20px}.trainer-pdf-hint{padding:14px 20px}}
