@@ -15,3 +15,11 @@ if(item==="career-08"){
     if(frame&&frame.dataset.src)frame.src=frame.dataset.src;
   }
 }
+
+/* Microsoft Power BI Data Analyst Associate credential */
+if(item==="tech-01"){
+  intro.textContent="Professional certifications and accreditation, starting with my Microsoft Power BI Data Analyst Associate credential.";
+  const panel=document.getElementById("pl300-panel");
+  const placeholder=document.querySelector(".empty-gallery");
+  if(panel&&placeholder){panel.hidden=false;placeholder.hidden=true;}
+}
