@@ -3,6 +3,9 @@ const params=new URLSearchParams(window.location.search);const item=params.get("
 const heading=document.getElementById("collection-title");const crumb=document.getElementById("collection-breadcrumb");const groupLabel=document.getElementById("collection-pillar");const intro=document.getElementById("collection-intro");
 if(title){document.title=title+" | Aiman Fikri Jamaludin";heading.textContent=title;crumb.textContent="← "+group.title;crumb.href=group.back;groupLabel.textContent=group.title+" / Portfolio collection";intro.textContent="This collection is being curated. Verified work, documents and supporting materials will be added here.";}else{document.title="Portfolio Collections | Aiman Fikri Jamaludin";heading.textContent="Portfolio Collections";crumb.textContent="← My Portfolio";crumb.href="index.html#pillars";groupLabel.textContent="Career · Academia · Tech";intro.textContent="Browse the three professional pillars from the homepage.";}
 
+/* Tech collection pages use title-only headers without generic descriptions. */
+if(m&&m[1]==="tech"){intro.hidden=true;}
+
 /* Featured teaching resource for Career → Teaching Materials */
 if(item==="career-08"){
   intro.textContent="Browse my Mathematics Learning Hub below.";
@@ -18,7 +21,7 @@ if(item==="career-08"){
 
 /* Microsoft Power BI Data Analyst Associate credential */
 if(item==="tech-01"){
-  intro.textContent="Professional certifications and accreditation, starting with my Microsoft Power BI Data Analyst Associate credential.";
+  
   const panel=document.getElementById("pl300-panel");
   const placeholder=document.querySelector(".empty-gallery");
   if(panel&&placeholder){panel.hidden=false;placeholder.hidden=true;}
