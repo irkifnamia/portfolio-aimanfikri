@@ -241,3 +241,11 @@ section{scroll-margin-top:78px}
 .teaching-site-fallback{margin:0;padding:14px 28px;color:var(--muted);font-size:.82rem}
 .teaching-site-fallback a{color:#88621e;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:650px){.teaching-site-header{padding:20px;flex-direction:column;align-items:flex-start;gap:13px}.teaching-site-header h2{font-size:1.25rem}.teaching-site-frame-wrap iframe{height:560px}.teaching-site-fallback{padding:13px 20px}}
+
+/* V2.9 — refined surface contrast, retaining the light executive palette */
+:root{--soft:#e7edf5;--line:#ccd5e2}
+.section-tint,.skills-section,.collection-body,.teaching-site-frame-wrap{background:#e7edf5}
+.card,.topic-card,.qualification-item,.ip-feature-card,.project,.empty-gallery,.teaching-site-panel{background:#fff;border-color:#ccd5e2;box-shadow:0 3px 12px rgba(20,45,82,.055)}
+.card:hover,.topic-card:hover,.qualification-item:hover,.ip-feature-card:hover{border-color:#c5aa77;box-shadow:0 9px 24px rgba(20,45,82,.09)}
+.skill-pills span{background:#fff;border-color:#ccd5e2}
+#pillars .card{border-color:#ccd5e2}
