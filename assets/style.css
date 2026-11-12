@@ -368,3 +368,23 @@ section{scroll-margin-top:78px}
 .ip-original-image img{display:block;width:100%;max-width:850px;height:auto;object-fit:contain;background:#fff;border:1px solid #ccd5e2;box-shadow:0 3px 14px rgba(20,45,82,.12);user-select:none;-webkit-user-drag:none}
 @media(max-width:650px){.certificate-gallery-grid{grid-template-columns:1fr}.certificate-tile{min-height:106px;padding:17px 42px 17px 18px}.ip-document-heading{padding:20px}.ip-original-image{padding:10px}.research-profile-links a{font-size:.81rem;padding:9px 12px}}
 @media(prefers-reduced-motion:reduce){.certificate-tile,.research-profile-links a{transition:none}}
+
+/* V3.8 — all Tech certificates share one collapsible, in-place viewer */
+.certificate-accordion-panel{padding:23px;background:transparent;border:0;box-shadow:none}
+.certificate-accordion-grid{display:flex;flex-direction:column;gap:15px}
+.certificate-accordion{background:#fff;border:1px solid #ccd5e2;border-radius:15px;box-shadow:0 3px 12px rgba(20,45,82,.05);overflow:hidden}
+.certificate-accordion[open]{border-color:#b9a077;box-shadow:0 7px 23px rgba(20,45,82,.09)}
+.certificate-accordion-summary{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:96px;padding:19px 23px;cursor:pointer;list-style:none}
+.certificate-accordion-summary::-webkit-details-marker{display:none}
+.certificate-accordion-summary::marker{content:""}
+.certificate-accordion-summary:hover{background:#fafbfd}
+.certificate-accordion-summary:focus-visible{outline:3px solid #b88936;outline-offset:-4px}
+.certificate-accordion-copy{display:flex;flex:1;flex-direction:column;gap:8px;min-width:0}
+.certificate-accordion-copy strong{color:#142d52;font-family:Manrope,sans-serif;font-size:clamp(.98rem,2.5vw,1.17rem);line-height:1.4;overflow-wrap:anywhere}
+.certificate-toggle-icon{font-size:1.7rem;font-weight:400;line-height:1;color:#a07834;flex:none;transition:transform .2s ease}
+.certificate-accordion[open] .certificate-toggle-icon{transform:rotate(45deg)}
+.certificate-accordion-body{padding:18px;background:#eef2f8;border-top:1px solid #dce3ec;display:flex;flex-direction:column;align-items:center;gap:16px}
+.certificate-inline-image,.certificate-pdf-canvas{display:block;max-width:100%;height:auto!important;background:#fff;box-shadow:0 3px 13px rgba(20,45,82,.09);border:1px solid #ccd5e2}
+.certificate-render-status{margin:8px;color:#637187;font-size:.9rem}
+@media(max-width:650px){.certificate-accordion-panel{padding:0;background:transparent}.certificate-accordion-summary{min-height:85px;padding:18px 20px}.certificate-accordion-body{padding:12px 8px}.certificate-accordion-grid{gap:13px}}
+@media(prefers-reduced-motion:reduce){.certificate-toggle-icon{transition:none}}
