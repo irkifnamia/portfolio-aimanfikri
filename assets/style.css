@@ -327,3 +327,22 @@ section{scroll-margin-top:78px}
 .pillar-hero .eyebrow{margin-top:0!important}
 @media(max-width:850px){.nav-actions{margin-left:auto;gap:12px}.nav-links{margin-left:0}.home-nav-btn{width:43px;height:43px}.pillar-hero{padding-top:32px}}
 @media(max-width:540px){.nav-actions{gap:10px}.home-nav-btn{width:40px;height:40px}.pillar-hero{padding-top:28px}}
+
+/* V3.5 — Academic publications collection */
+.publications-panel[hidden]{display:none!important}
+.publication-heading{display:flex;justify-content:space-between;align-items:end;gap:18px;margin:0 0 25px}
+.publication-heading h2{margin:7px 0 0;font-size:clamp(1.5rem,3.5vw,2.1rem)}
+.publication-scholar{display:inline-flex;align-items:center;justify-content:center;flex:none;border-radius:9px;border:1px solid #ccd5e2;background:#fff;padding:11px 15px;font-weight:700;color:#8c651f;font-size:.86rem}
+.publication-scholar:hover{border-color:#b88936;background:#fffdf7}
+.publication-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.publication-card{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #ccd5e2;border-radius:16px;padding:24px;box-shadow:0 3px 12px rgba(20,45,82,.055)}
+.publication-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:12px}
+.publication-year{color:#896222;font-size:.84rem;font-weight:800}
+.publication-type{font-size:.7rem;letter-spacing:.025em;border:1px solid #dde4ed;border-radius:50px;padding:3px 10px;color:#53647b;background:#f7f9fc}
+.publication-card h3{font-size:1.06rem;line-height:1.45;letter-spacing:-.02em;overflow-wrap:anywhere;margin:0 0 14px}
+.publication-authors,.publication-venue{font-size:.85rem;line-height:1.6;color:#637187;margin:0 0 10px}
+.publication-venue{font-style:italic}
+.publication-link{color:#8d6725;font-weight:800;font-size:.86rem;margin-top:auto;padding-top:12px;align-self:flex-start}
+.publication-link:hover{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:740px){.publication-list{grid-template-columns:1fr}.publication-card{padding:21px}}
+@media(max-width:480px){.publication-heading{align-items:flex-start;flex-direction:column}.publication-scholar{padding:9px 13px}}
