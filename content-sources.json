@@ -18,11 +18,111 @@
     },
     {
       "drive_file_id": "1io43HtjLz6muFDcqnR6nuSBpj_VPSYYa",
-      "source_folder": "TECH/cert & accreditation",
+      "source_folder": "TECH/cert & accreditation/pl300",
       "github_path": "assets/cert-pl300.png",
       "site_path": "collection.html?item=tech-01",
       "display": "inline_image"
+    },
+    {
+      "drive_file_id": "1er54LUT1icagJPi3vWXPR9UxPuv00F6Y",
+      "source_folder": "IP/Smart Educational Dashboard",
+      "github_path": "assets/ip/smart-educational-dashboard-copyright.png",
+      "site_path": "intellectual-property.html",
+      "display": "inline_image"
+    },
+    {
+      "drive_file_id": "1Do4C2LQdGMokWNqEj1vgwWaH67megE6W",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/iverson-powerbi-2026.pdf",
+      "site_path": "certificate-viewer.html?id=iverson-powerbi-2026",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1a0hijVSewOzWSQ_dUQChIPENPbkrpSDU",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/ai-chatbot-for-academic.pdf",
+      "site_path": "certificate-viewer.html?id=ai-chatbot-academic",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1j8XAW0ompSyN1bRZa9M3kixchDmE9h_D",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/powerbi-uum-2024.pdf",
+      "site_path": "certificate-viewer.html?id=powerbi-uum-2024",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1KsJl85rcztfCh1P-pG7NHMYcwZWtHbYM",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/ever-ai-course.pdf",
+      "site_path": "certificate-viewer.html?id=ever-ai-course",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1o3UXd_h5kUj4MF0xitMwug639GQZ8A43",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/powerbi-usm.pdf",
+      "site_path": "certificate-viewer.html?id=powerbi-usm",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1dfYBNSk3JO0nQTZnS2BYSHKz3H1SRwz-",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/datacamp-supervised-learning.pdf",
+      "site_path": "certificate-viewer.html?id=datacamp-supervised-learning",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1S6cYk5UmfBctf8zvNDwtFqVf_zoMidJA",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/datacamp-cleaning-data-python.pdf",
+      "site_path": "certificate-viewer.html?id=datacamp-cleaning-data-python",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1BJUTiZIPnr0PZahZBcQyBc_DOJttihnu",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/datacamp-data-manipulation-python.pdf",
+      "site_path": "certificate-viewer.html?id=datacamp-data-manipulation-python",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1HUHmjpC1OO1G2l7V9wwyv2vilX88EAOt",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/datacamp-intro-r.pdf",
+      "site_path": "certificate-viewer.html?id=datacamp-intro-r",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1mBGAzA9Ix5OyHygIoUxc5ZTLBUS7YbdO",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/datacamp-intermediate-python.pdf",
+      "site_path": "certificate-viewer.html?id=datacamp-intermediate-python",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1b2z76i3HJrTo-Gapu4DskZxT-p-U4ODW",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/datacamp-intro-python.pdf",
+      "site_path": "certificate-viewer.html?id=datacamp-intro-python",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1wcnhHlms1JmlAVNPAkrE0LeinzmQjALo",
+      "source_folder": "TECH/cert & accreditation",
+      "github_path": "assets/tech/certifications/udemy-statistics-for-data-science.pdf",
+      "site_path": "certificate-viewer.html?id=udemy-statistics-data-science",
+      "display": "pdfjs_canvas"
+    },
+    {
+      "drive_file_id": "1he4Si9v6EZJmgr0785njSmfJIgIU7a_h",
+      "source_folder": "TECH/cert & accreditation/pro cert ds usm",
+      "github_path": "assets/tech/certifications/professional-data-scientist-usm.pdf",
+      "site_path": "certificate-viewer.html?id=professional-data-scientist-usm",
+      "display": "pdfjs_canvas"
     }
   ],
-  "notice": "No public website embeds of Drive. No download controls are presented; browser-retrievable assets cannot be made technically non-downloadable on a public static site."
+  "notice": "No public website embeds of Drive. No download controls are presented; browser-retrievable assets cannot be made technically non-downloadable on a public static site.",
+  "last_verified_sync": "2026-11-12",
+  "notes": "On-demand sync: Drive remains the source; GitHub-hosted static copies are used by portfolio pages. File updates need another sync request."
 }
