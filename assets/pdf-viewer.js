@@ -7,7 +7,7 @@
   const pdfjs=window.pdfjsLib;
   if(!pdfjs){status.textContent="Document viewer unavailable. Please refresh the page.";return;}
   pdfjs.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
-  const source="assets/trainer-profile-aiman.pdf";
+  const source=root.dataset.src||"assets/trainer-profile-aiman.pdf";
   pdfjs.getDocument({url:source}).promise.then(async pdf=>{
     status.textContent="Rendering "+pdf.numPages+" pages…";
     for(let n=1;n<=pdf.numPages;n++){
