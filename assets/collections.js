@@ -26,3 +26,11 @@ if(item==="tech-01"){
   const placeholder=document.querySelector(".empty-gallery");
   if(panel&&placeholder){panel.hidden=false;placeholder.hidden=true;}
 }
+
+/* Verified research publications under Academia item 05. */
+if(item==="academia-05"){
+  intro.hidden=true;
+  const list=document.getElementById("publications-panel");
+  const placeholder=document.querySelector(".empty-gallery");
+  if(list&&placeholder){list.hidden=false;placeholder.hidden=true;}
+}
