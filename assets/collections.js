@@ -35,26 +35,89 @@ if(item==="academia-02"||item==="academia-05"){
   if(list&&placeholder){list.hidden=false;placeholder.hidden=true;}
 }
 
-/* Certificates synced from the TECH Google Drive folder into GitHub. */
+/* Expand certificates in place; only one PDF canvas set is kept in memory. */
 if(item==="tech-01"){
   const grid=document.getElementById("certificate-gallery-grid");
   const catalog=window.portfolioCertificateCatalog||[];
   if(grid){
+    let active=null;
     for(const cert of catalog){
-      const link=document.createElement("a");
-      link.className="certificate-tile";
-      link.href="certificate-viewer.html?id="+encodeURIComponent(cert.id);
+      const details=document.createElement("details");
+      details.className="certificate-accordion";
+      const summary=document.createElement("summary");
+      summary.className="certificate-accordion-summary";
+      const copy=document.createElement("span");
+      copy.className="certificate-accordion-copy";
       const category=document.createElement("span");
       category.className="certificate-tile-type";
       category.textContent=cert.category;
       const title=document.createElement("strong");
       title.textContent=cert.title;
-      const icon=document.createElement("span");
-      icon.className="certificate-tile-arrow";
-      icon.setAttribute("aria-hidden","true");
-      icon.textContent="↗";
-      link.append(category,title,icon);
-      grid.appendChild(link);
+      const chevron=document.createElement("span");
+      chevron.className="certificate-toggle-icon";
+      chevron.setAttribute("aria-hidden","true");
+      chevron.textContent="+";
+      copy.append(category,title);
+      summary.append(copy,chevron);
+      const body=document.createElement("div");
+      body.className="certificate-accordion-body";
+      details.append(summary,body);
+      grid.appendChild(details);
+      details.addEventListener("toggle",async()=>{
+        if(!details.open){
+          body.replaceChildren();
+          if(active===details)active=null;
+          return;
+        }
+        if(active&&active!==details)active.open=false;
+        active=details;
+        if(cert.kind==="image"){
+          const img=document.createElement("img");
+          img.className="certificate-inline-image";
+          img.src=cert.src;
+          img.alt=cert.title;
+          img.loading="lazy";
+          img.draggable=false;
+          body.appendChild(img);
+          return;
+        }
+        const status=document.createElement("p");
+        status.className="certificate-render-status";
+        status.textContent="Loading certificate…";
+        body.appendChild(status);
+        const pdfjs=window.pdfjsLib;
+        if(!pdfjs){status.textContent="Certificate viewer is unavailable. Please refresh the page.";return;}
+        pdfjs.GlobalWorkerOptions.workerSrc="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+        let pdf=null;
+        try{
+          pdf=await pdfjs.getDocument({url:cert.src}).promise;
+          if(!details.open)return;
+          for(let pageNum=1;pageNum<=pdf.numPages;pageNum++){
+            const page=await pdf.getPage(pageNum);
+            if(!details.open)return;
+            const normal=page.getViewport({scale:1});
+            const available=Math.max(220,Math.min(900,body.clientWidth-16));
+            const viewport=page.getViewport({scale:available/normal.width});
+            const dpr=Math.min(window.devicePixelRatio||1,2);
+            const canvas=document.createElement("canvas");
+            canvas.className="certificate-pdf-canvas";
+            canvas.width=Math.ceil(viewport.width*dpr);
+            canvas.height=Math.ceil(viewport.height*dpr);
+            canvas.style.width=Math.round(viewport.width)+"px";
+            canvas.style.height=Math.round(viewport.height)+"px";
+            canvas.setAttribute("role","img");
+            canvas.setAttribute("aria-label",cert.title+", page "+pageNum+" of "+pdf.numPages);
+            body.appendChild(canvas);
+            await page.render({canvasContext:canvas.getContext("2d",{alpha:false}),viewport,transform:dpr===1?null:[dpr,0,0,dpr,0,0]}).promise;
+          }
+          if(details.open)status.remove();
+        }catch(error){
+          console.error("Certificate render error",error);
+          if(details.open)status.textContent="Unable to display this certificate right now.";
+        }finally{
+          if(pdf)pdf.destroy();
+        }
+      });
     }
   }
 }
