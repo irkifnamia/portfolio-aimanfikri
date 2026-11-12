@@ -34,3 +34,27 @@ if(item==="academia-02"||item==="academia-05"){
   const placeholder=document.querySelector(".empty-gallery");
   if(list&&placeholder){list.hidden=false;placeholder.hidden=true;}
 }
+
+/* Certificates synced from the TECH Google Drive folder into GitHub. */
+if(item==="tech-01"){
+  const grid=document.getElementById("certificate-gallery-grid");
+  const catalog=window.portfolioCertificateCatalog||[];
+  if(grid){
+    for(const cert of catalog){
+      const link=document.createElement("a");
+      link.className="certificate-tile";
+      link.href="certificate-viewer.html?id="+encodeURIComponent(cert.id);
+      const category=document.createElement("span");
+      category.className="certificate-tile-type";
+      category.textContent=cert.category;
+      const title=document.createElement("strong");
+      title.textContent=cert.title;
+      const icon=document.createElement("span");
+      icon.className="certificate-tile-arrow";
+      icon.setAttribute("aria-hidden","true");
+      icon.textContent="↗";
+      link.append(category,title,icon);
+      grid.appendChild(link);
+    }
+  }
+}
